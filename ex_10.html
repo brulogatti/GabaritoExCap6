@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;}
+        table {
+          border-collapse: collapse;}
+        th, td {
+          padding: 5px;}
+      </style>
+    <script>
+        tabelaHTML = "<table><tr><th colspan='50'>Números Primos entre 0 e 200<tr><td>1";
+        var sequencia = 0;
+        var primo=0;
+        var valor = 2;
+        do {
+            var cont = 0;
+            for (let index = 1; index <= valor; index++) {
+                if(valor%index==0){
+                    cont++;
+                }
+            }
+            if(cont==2){
+                primo=valor;
+                sequencia++;
+                tabelaHTML += "<td bgcolor='#00FF00'>" + primo;
+            }else{
+                tabelaHTML += "<td>" + valor;
+            }
+            if(valor%20==0){
+                tabelaHTML += "<tr>";
+            }
+            valor++;
+        } while (valor<=200);
+        tabelaHTML += "</table>";
+        document.write(tabelaHTML)
+        document.write('Primos encontrados: ' + sequencia+ '<br>')
+    </script>
+</head>
+<body>
+    <h1>Exercicio 10</h1>  
+</body>
+</html>

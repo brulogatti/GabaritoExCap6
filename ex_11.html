@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11</title>
+    <script>
+        // solicita ao usuário que informe os valores dos coeficientes a, b e c
+        let a = prompt("Informe o valor de a: ");
+        let b = prompt("Informe o valor de b: ");
+        let c = prompt("Informe o valor de c: ");
+
+        // converte os valores informados pelo usuário para números
+        a = parseFloat(a);
+        b = parseFloat(b);
+        c = parseFloat(c);
+
+        // calcula o delta
+        const delta = Math.pow(b, 2) - 4 * a * c;
+
+        // mostra o cálculo passo a passo
+        console.log("Delta (Δ) = b² - 4ac");
+        console.log(`Delta (Δ) = ${b}² - 4 * ${a} * ${c}`);
+        console.log(`Delta (Δ) = ${Math.pow(b, 2)} - ${4 * a * c}`);
+        console.log(`Delta (Δ) = ${delta}`);
+
+        // mostra o resultado final
+        alert(`O valor do Delta (Δ) é ${delta}`);
+    </script>
+</head>
+<body>
+
+    <h1>Exercício 11</h1>
+    <p>Inspecione a página para ver o passo a passo</p>
+    
+</body>
+</html>
